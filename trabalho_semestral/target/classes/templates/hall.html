@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall - Locadora</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+        .container { max-width: 400px; margin: 80px auto; background: #fff; padding: 32px; border-radius: 8px; box-shadow: 0 2px 8px #0001; text-align: center; }
+        h1 { margin-bottom: 32px; }
+        .btn {
+            display: inline-block;
+            margin: 10px 10px 0 10px;
+            padding: 12px 32px;
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+        .btn:hover { background: #125ea6; }
+        .btn.cadastro { background: #388e3c; }
+        .btn.cadastro:hover { background: #256029; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hall da Locadora</h1>
+        <a href="/vhs/cadastrovhs" class="btn cadastro">Cadastro Nova Fita</a>
+        <a href="/vhs" class="btn">Listar Fitas</a>
+        <a href="/categorias" class="btn">Gerenciar Categorias</a>
+        <a href="/logout" class="btn" style="background: #f44336;">Sair</a>
+    </div>
+</body>
+</html>

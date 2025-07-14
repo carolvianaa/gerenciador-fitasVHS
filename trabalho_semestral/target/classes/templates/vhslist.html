@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Fitas VHS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+        }
+        th, td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #f0f0f0;
+        }
+        tr:hover {
+            background: #f9f9f9;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #1976d2;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Listagem de Fitas VHS</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Diretor</th>
+                    <th>Categoria</th>
+                    <th>Imagem</th>
+                    <th>Data de Registro</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="vhs : ${vhsList}">
+                    <td th:text="${vhs.title}">Título</td>
+                    <td th:text="${vhs.director}">Diretor</td>
+                    <td>
+                        
+                        <ul>
+                            <li th:each="cat : ${vhs.categorias}" th:text="${cat.nome}"></li>
+                        </ul>
+                    
+                    </td>
+                    <td><img th:src="${vhs.image}" style="height: 60px;"></td>
+                    <td th:text="${#temporals.format(vhs.registrationDate, 'dd/MM/yyyy')}">Data de registro</td>
+                    <td th:text="${vhs.status}">Status</td>
+                    <td>
+                        <a th:href="@{'/vhs/editar/' + ${vhs.id}}" class="btn" style="background:#1976d2;margin-right:5px;">Editar</a>
+                        <a th:href="@{'/vhs/deletar/' + ${vhs.id}}" onclick="return confirm('Tem certeza que deseja deletar?');" class="btn" style="background:#d32f2f;">Deletar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a th:href="@{/vhs/cadastrovhs}" class="btn" style="margin-top:20px;">Adicionar Nova Fita</a>
+        <a th:href="@{/logout}" class="btn" style="margin-top:20px; background:#f44336;">Sair</a>
+        <a th:href="@{/categorias}" class="btn" style="margin-top:20px; background:#4CAF50;">Gerenciar Categorias</a>
+    </div>
+</body>
+</html>

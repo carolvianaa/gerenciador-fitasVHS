@@ -1,0 +1,10 @@
+/mnt/c/Users/Admin/Desktop/trabalho-semestral-certo-mesmo/trabalho-semestral-certo-mesmo/src/main/java/edu/ifpr/trabalho_semestral/TrabalhoSemestralApplication.java
+/mnt/c/Users/Admin/Desktop/trabalho-semestral-certo-mesmo/trabalho-semestral-certo-mesmo/src/main/java/edu/ifpr/trabalho_semestral/controllers/UsuarioController.java
+/mnt/c/Users/Admin/Desktop/trabalho-semestral-certo-mesmo/trabalho-semestral-certo-mesmo/src/main/java/edu/ifpr/trabalho_semestral/controllers/VHSController.java
+/mnt/c/Users/Admin/Desktop/trabalho-semestral-certo-mesmo/trabalho-semestral-certo-mesmo/src/main/java/edu/ifpr/trabalho_semestral/entities/Usuario.java
+/mnt/c/Users/Admin/Desktop/trabalho-semestral-certo-mesmo/trabalho-semestral-certo-mesmo/src/main/java/edu/ifpr/trabalho_semestral/entities/VHS.java
+/mnt/c/Users/Admin/Desktop/trabalho-semestral-certo-mesmo/trabalho-semestral-certo-mesmo/src/main/java/edu/ifpr/trabalho_semestral/repositories/UsuarioRepository.java
+/mnt/c/Users/Admin/Desktop/trabalho-semestral-certo-mesmo/trabalho-semestral-certo-mesmo/src/main/java/edu/ifpr/trabalho_semestral/repositories/VHSRepository.java
+/mnt/c/Users/Admin/Desktop/trabalho-semestral-certo-mesmo/trabalho-semestral-certo-mesmo/src/main/java/edu/ifpr/trabalho_semestral/services/TapeStatus.java
+/mnt/c/Users/Admin/Desktop/trabalho-semestral-certo-mesmo/trabalho-semestral-certo-mesmo/src/main/java/edu/ifpr/trabalho_semestral/services/UsuarioService.java
+/mnt/c/Users/Admin/Desktop/trabalho-semestral-certo-mesmo/trabalho-semestral-certo-mesmo/src/main/java/edu/ifpr/trabalho_semestral/services/VHSService.java
